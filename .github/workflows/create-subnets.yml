@@ -1,13 +1,14 @@
 name: Create subnets
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
     paths:
       - .github/workflows/create-subnets.yml
       - get-subnets.py
   schedule:
-    - cron: '16 7 * * 1'
+    - cron: '16 */12 * * *' 
 
 permissions:
   contents: write
