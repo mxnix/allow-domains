@@ -24,6 +24,15 @@ SUBNET_SERVICES = [
     'cloudfront', 'roblox', 'google_meet',
 ]
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst', 'google_meet.lst'}
+COMMENT_RE = re.compile(r'\s+(#|;|//).*')
+
+def clean_list_line(line):
+    stripped = line.strip()
+    if not stripped:
+        return ''
+    if stripped.startswith(('#', ';', '//')):
+        return ''
+    return COMMENT_RE.sub('', stripped).strip()
 
 def collect_files(src):
     files = []
@@ -42,7 +51,10 @@ def collect_domains(src, dot_prefix=True):
             continue
         with open(f) as infile:
             for line in infile:
-                ext = tldextract.extract(line.rstrip())
+                cleaned = clean_list_line(line)
+                if not cleaned:
+                    continue
+                ext = tldextract.extract(cleaned)
                 if not ext.suffix:
                     continue
                 if re.search(r'[^а-я\-]', ext.domain):
@@ -99,7 +111,12 @@ def lines_from_file(filepath):
         print(f"Warning: input file not found: {filepath}", file=sys.stderr)
         return []
     with open(filepath, 'r', encoding='utf-8') as f:
-        return [line.strip() for line in f if line.strip()]
+        cleaned = []
+        for line in f:
+            value = clean_list_line(line)
+            if value:
+                cleaned.append(value)
+        return cleaned
 
 def compile_mrs(domains, name, mrs_dir='MRS', behavior='domain'):
     os.makedirs(mrs_dir, exist_ok=True)

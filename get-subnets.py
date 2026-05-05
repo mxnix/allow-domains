@@ -6,6 +6,7 @@ import os
 import shutil
 import json
 import sys
+import re
 
 RIPE_STAT_URL = 'https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS{}'
 USER_AGENT = 'allow-domains/1.0'
@@ -56,6 +57,16 @@ GOOGLE_MEET_V6 = [
 
 AWS_CIDR_URL='https://ip-ranges.amazonaws.com/ip-ranges.json'
 
+COMMENT_RE = re.compile(r'\s+(#|;|//).*')
+
+def clean_list_line(line):
+    stripped = line.strip()
+    if not stripped:
+        return ''
+    if stripped.startswith(('#', ';', '//')):
+        return ''
+    return COMMENT_RE.sub('', stripped).strip()
+
 def make_request(url):
     req = urllib.request.Request(url)
     req.add_header('User-Agent', USER_AGENT)
@@ -102,6 +113,9 @@ def download_subnets(*urls):
             with urllib.request.urlopen(req, timeout=30) as response:
                 subnets = response.read().decode('utf-8').splitlines()
                 for subnet_str in subnets:
+                    subnet_str = clean_list_line(subnet_str)
+                    if not subnet_str:
+                        continue
                     try:
                         network = ipaddress.ip_network(subnet_str, strict=False)
                         if network.version == 4:
