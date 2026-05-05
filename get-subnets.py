@@ -7,6 +7,7 @@ import shutil
 import json
 import sys
 import re
+import time
 
 RIPE_STAT_URL = 'https://stat.ripe.net/data/announced-prefixes/data.json?resource=AS{}'
 USER_AGENT = 'allow-domains/1.0'
@@ -105,33 +106,48 @@ def fetch_asn_prefixes(asn_list):
 
     return ipv4_subnets, ipv6_subnets
 
-def download_subnets(*urls):
+def download_subnets_once(*urls):
     ipv4_subnets = []
     ipv6_subnets = []
 
     for url in urls:
         req = make_request(url)
-        try:
-            with urllib.request.urlopen(req, timeout=30) as response:
-                subnets = response.read().decode('utf-8').splitlines()
-                for subnet_str in subnets:
-                    subnet_str = clean_list_line(subnet_str)
-                    if not subnet_str:
-                        continue
-                    try:
-                        network = ipaddress.ip_network(subnet_str, strict=False)
-                        if network.version == 4:
-                            ipv4_subnets.append(subnet_str)
-                        else:
-                            ipv6_subnets.append(subnet_str)
-                    except ValueError:
-                        print(f"Invalid subnet: {subnet_str}")
-                        sys.exit(1)
-        except Exception as e:
-            print(f"Query error {url}: {e}")
-            sys.exit(1)
+        with urllib.request.urlopen(req, timeout=30) as response:
+            subnets = response.read().decode('utf-8').splitlines()
+            for subnet_str in subnets:
+                subnet_str = clean_list_line(subnet_str)
+                if not subnet_str:
+                    continue
+                try:
+                    network = ipaddress.ip_network(subnet_str, strict=False)
+                except ValueError:
+                    raise ValueError(f"Invalid subnet: {subnet_str}")
+                if network.version == 4:
+                    ipv4_subnets.append(subnet_str)
+                else:
+                    ipv6_subnets.append(subnet_str)
 
     return ipv4_subnets, ipv6_subnets
+
+def download_subnets(*urls):
+    try:
+        return download_subnets_once(*urls)
+    except Exception as e:
+        print(f"Query error {urls}: {e}")
+        sys.exit(1)
+
+def download_subnets_with_retries(*urls, retries=3, backoff_seconds=2):
+    last_error = None
+    for attempt in range(1, retries + 1):
+        try:
+            return download_subnets_once(*urls)
+        except Exception as e:
+            last_error = e
+            if attempt < retries:
+                time.sleep(backoff_seconds * attempt)
+
+    print(f"Query error {urls}: {last_error}")
+    return None, None
 
 def download_aws_cloudfront_subnets():
     ipv4_subnets = []
@@ -192,9 +208,17 @@ if __name__ == '__main__':
 
     # Discord voice
     print(f'Fetching {DISCORD}...')
-    ipv4_discord, ipv6_discord = download_subnets(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
-    write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
-    write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
+    ipv4_discord, ipv6_discord = download_subnets_with_retries(DISCORD_VOICE_V4, DISCORD_VOICE_V6)
+    if ipv4_discord is None or ipv6_discord is None:
+        existing_v4 = os.path.exists(f'{IPv4_DIR}/{DISCORD}')
+        existing_v6 = os.path.exists(f'{IPv6_DIR}/{DISCORD}')
+        if existing_v4 and existing_v6:
+            print(f"Warning: using existing {DISCORD} subnet files due to download failure")
+        else:
+            sys.exit(1)
+    else:
+        write_subnets_to_file(ipv4_discord, f'{IPv4_DIR}/{DISCORD}')
+        write_subnets_to_file(ipv6_discord, f'{IPv6_DIR}/{DISCORD}')
 
     # Telegram
     print(f'Fetching {TELEGRAM}...')
