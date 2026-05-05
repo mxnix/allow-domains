@@ -1,6 +1,7 @@
 name: Create lists
 
 on:
+  workflow_dispatch:
   push:
     branches: [ "main" ]
     paths:
@@ -10,7 +11,7 @@ on:
       - src/**
       - convert.py
   schedule:
-    - cron: '29 8 * * 1'
+    - cron: '29 */12 * * *'
 
 permissions:
   contents: write
