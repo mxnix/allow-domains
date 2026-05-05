@@ -56,6 +56,8 @@ GOOGLE_MEET_V6 = [
 ]
 
 AWS_CIDR_URL='https://ip-ranges.amazonaws.com/ip-ranges.json'
+FASTLY_PUBLIC_IP_URL = 'https://api.fastly.com/public-ip-list'
+FASTLY = 'fastly.lst'
 
 COMMENT_RE = re.compile(r'\s+(#|;|//).*')
 
@@ -154,6 +156,19 @@ def download_aws_cloudfront_subnets():
 
     return ipv4_subnets, ipv6_subnets
 
+def download_fastly_subnets():
+    req = make_request(FASTLY_PUBLIC_IP_URL)
+    try:
+        with urllib.request.urlopen(req, timeout=30) as response:
+            data = json.loads(response.read().decode('utf-8'))
+            ipv4_subnets = data.get('addresses', [])
+            ipv6_subnets = data.get('ipv6_addresses', [])
+    except Exception as e:
+        print(f"Error downloading Fastly ranges: {e}")
+        sys.exit(1)
+
+    return ipv4_subnets, ipv6_subnets
+
 def write_subnets_to_file(subnets, filename):
     with open(filename, 'w') as file:
         for subnet in subnets:
@@ -203,6 +218,12 @@ if __name__ == '__main__':
     ipv4_cloudfront, ipv6_cloudfront = download_aws_cloudfront_subnets()
     write_subnets_to_file(ipv4_cloudfront, f'{IPv4_DIR}/{CLOUDFRONT}')
     write_subnets_to_file(ipv6_cloudfront, f'{IPv6_DIR}/{CLOUDFRONT}')
+
+    # Fastly
+    print(f'Fetching {FASTLY}...')
+    ipv4_fastly, ipv6_fastly = download_fastly_subnets()
+    write_subnets_to_file(ipv4_fastly, f'{IPv4_DIR}/{FASTLY}')
+    write_subnets_to_file(ipv6_fastly, f'{IPv6_DIR}/{FASTLY}')
 
     # Legacy copies with capitalized names (e.g. meta.lst -> Meta.lst)
     LEGACY_FILES = ['meta.lst', 'twitter.lst', 'discord.lst']

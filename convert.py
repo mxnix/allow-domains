@@ -21,7 +21,7 @@ uaDomainsOut='Ukraine/inside'
 SUBNET_SERVICES = [
     'discord', 'meta', 'twitter', 'telegram',
     'cloudflare', 'hetzner', 'ovh', 'digitalocean',
-    'cloudfront', 'roblox', 'google_meet',
+    'cloudfront', 'fastly', 'roblox', 'google_meet',
 ]
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst', 'google_meet.lst'}
 COMMENT_RE = re.compile(r'\s+(#|;|//).*')
@@ -340,7 +340,8 @@ if __name__ == '__main__':
         if service == 'discord':
             continue
         subnets = lines_from_file(f'Subnets/IPv4/{service}.lst')
-        domains = lines_from_file(f'Services/{service}.lst')
+        domains_path = f'Services/{service}.lst'
+        domains = lines_from_file(domains_path) if os.path.exists(domains_path) else []
         srs_rule(service, [{"domain_suffix": domains, "ip_cidr": subnets}])
 
     # Discord (domains + UDP subnets on high ports)
