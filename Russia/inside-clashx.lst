@@ -78,6 +78,7 @@ DOMAIN-SUFFIX,as6723.net
 DOMAIN-SUFFIX,assets.heroku.com
 DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atn.ua
+DOMAIN-SUFFIX,atom.io
 DOMAIN-SUFFIX,att.com
 DOMAIN-SUFFIX,attachments.f95zone.to
 DOMAIN-SUFFIX,atv4.dnskp.cc
@@ -106,6 +107,7 @@ DOMAIN-SUFFIX,bitdefender.com
 DOMAIN-SUFFIX,bitnami.com
 DOMAIN-SUFFIX,blackseanews.net
 DOMAIN-SUFFIX,blinkshot.io
+DOMAIN-SUFFIX,blob.core.windows.net
 DOMAIN-SUFFIX,bluehost.com
 DOMAIN-SUFFIX,booktracker.org
 DOMAIN-SUFFIX,boominfo.org
@@ -178,11 +180,13 @@ DOMAIN-SUFFIX,coinsbee.com
 DOMAIN-SUFFIX,coldfilm.city
 DOMAIN-SUFFIX,coldfilm.ink
 DOMAIN-SUFFIX,coldfilm.xyz
+DOMAIN-SUFFIX,collector.github.com
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,community.sophos.com
 DOMAIN-SUFFIX,connect.ngrok-agent.com
 DOMAIN-SUFFIX,contabo.com
 DOMAIN-SUFFIX,coomer.su
+DOMAIN-SUFFIX,copilot-telemetry.githubusercontent.com
 DOMAIN-SUFFIX,copilot.microsoft.com
 DOMAIN-SUFFIX,corsair.com
 DOMAIN-SUFFIX,coursera.org
@@ -214,6 +218,7 @@ DOMAIN-SUFFIX,delfi.lv
 DOMAIN-SUFFIX,delivery.2d.net.co
 DOMAIN-SUFFIX,dell.com
 DOMAIN-SUFFIX,dellcdn.com
+DOMAIN-SUFFIX,dependabot.com
 DOMAIN-SUFFIX,depositphotos.com
 DOMAIN-SUFFIX,designer.microsoft.com
 DOMAIN-SUFFIX,designify.com
@@ -302,6 +307,9 @@ DOMAIN-SUFFIX,fansly.com
 DOMAIN-SUFFIX,fapello.com
 DOMAIN-SUFFIX,fast-torrent.club
 DOMAIN-SUFFIX,fast.com
+DOMAIN-SUFFIX,fastly.com
+DOMAIN-SUFFIX,fastly.net
+DOMAIN-SUFFIX,fastlystatus.com
 DOMAIN-SUFFIX,fastpic.org
 DOMAIN-SUFFIX,fb.com
 DOMAIN-SUFFIX,fbcdn.net
@@ -359,9 +367,25 @@ DOMAIN-SUFFIX,getoutline.com
 DOMAIN-SUFFIX,getoutline.org
 DOMAIN-SUFFIX,gfn.am
 DOMAIN-SUFFIX,ggpht.com
+DOMAIN-SUFFIX,gh.io
+DOMAIN-SUFFIX,ghcr.io
 DOMAIN-SUFFIX,ghostrc.game.idtech.services
 DOMAIN-SUFFIX,gifyu.com
+DOMAIN-SUFFIX,git.io
 DOMAIN-SUFFIX,git.new
+DOMAIN-SUFFIX,github-api.arkoselabs.com
+DOMAIN-SUFFIX,github.ai
+DOMAIN-SUFFIX,github.blog
+DOMAIN-SUFFIX,github.community
+DOMAIN-SUFFIX,github.dev
+DOMAIN-SUFFIX,github.io
+DOMAIN-SUFFIX,githubapp.com
+DOMAIN-SUFFIX,githubassets.com
+DOMAIN-SUFFIX,githubhackathon.com
+DOMAIN-SUFFIX,githubnext.com
+DOMAIN-SUFFIX,githubpreview.dev
+DOMAIN-SUFFIX,githubstatus.com
+DOMAIN-SUFFIX,githubuniverse.com
 DOMAIN-SUFFIX,glavred.info
 DOMAIN-SUFFIX,glavred.net
 DOMAIN-SUFFIX,global.fncstatic.com
@@ -605,6 +629,7 @@ DOMAIN-SUFFIX,myanimelist.net
 DOMAIN-SUFFIX,mydoramy.club
 DOMAIN-SUFFIX,myheritage.com
 DOMAIN-SUFFIX,myjetbrains.com
+DOMAIN-SUFFIX,myoctocat.com
 DOMAIN-SUFFIX,myparallels.com
 DOMAIN-SUFFIX,myqrcode.com
 DOMAIN-SUFFIX,navalny.com
@@ -660,6 +685,9 @@ DOMAIN-SUFFIX,novaya.no
 DOMAIN-SUFFIX,novayagazeta.eu
 DOMAIN-SUFFIX,novayagazeta.ru
 DOMAIN-SUFFIX,novyny.live
+DOMAIN-SUFFIX,npm.community
+DOMAIN-SUFFIX,npmjs.com
+DOMAIN-SUFFIX,npmjs.org
 DOMAIN-SUFFIX,ntc.party
 DOMAIN-SUFFIX,ntp.msn.com
 DOMAIN-SUFFIX,nude-moon.org
@@ -668,6 +696,7 @@ DOMAIN-SUFFIX,oaistatic.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,obozrevatel.com
 DOMAIN-SUFFIX,ocstore.com
+DOMAIN-SUFFIX,octocaptcha.com
 DOMAIN-SUFFIX,octopus.do
 DOMAIN-SUFFIX,oculus.com
 DOMAIN-SUFFIX,ohmyswift.ru
@@ -685,6 +714,7 @@ DOMAIN-SUFFIX,openmedia.io
 DOMAIN-SUFFIX,openrouter.ai
 DOMAIN-SUFFIX,opensanctions.org
 DOMAIN-SUFFIX,opensea.io
+DOMAIN-SUFFIX,opensource.guide
 DOMAIN-SUFFIX,opentrackr.org
 DOMAIN-SUFFIX,opposition-news.com
 DOMAIN-SUFFIX,oracle.com
@@ -790,6 +820,7 @@ DOMAIN-SUFFIX,remove.bg
 DOMAIN-SUFFIX,render-state.to
 DOMAIN-SUFFIX,rentry.co
 DOMAIN-SUFFIX,rentry.org
+DOMAIN-SUFFIX,repo.new
 DOMAIN-SUFFIX,republic.ru
 DOMAIN-SUFFIX,research.net
 DOMAIN-SUFFIX,restream.io
@@ -975,6 +1006,7 @@ DOMAIN-SUFFIX,the-village.ru
 DOMAIN-SUFFIX,theaudiodb.com
 DOMAIN-SUFFIX,thebarentsobserver.com
 DOMAIN-SUFFIX,thebell.io
+DOMAIN-SUFFIX,thegithubshop.com
 DOMAIN-SUFFIX,theins.press
 DOMAIN-SUFFIX,theins.ru
 DOMAIN-SUFFIX,themoscowtimes.com
