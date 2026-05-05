@@ -1,0 +1,44 @@
+# GitHub. Include Copilot, NPM, Github Actions and telemetry
+# from v2fly/domain-list-community repository
+
+# GitHub
+atom.io
+dependabot.com
+gh.io
+ghcr.io
+git.io
+github.ai
+github.blog
+github.com
+github.community
+github.dev
+github.io
+githubapp.com
+githubassets.com
+githubhackathon.com
+githubnext.com
+githubpreview.dev
+githubstatus.com
+githubuniverse.com
+githubusercontent.com
+myoctocat.com
+octocaptcha.com
+opensource.guide
+repo.new
+thegithubshop.com
+
+# GitHub Actions
+blob.core.windows.net
+github-api.arkoselabs.com
+
+# NPM
+npm.community
+npmjs.com
+npmjs.org
+
+# GitHub Copilot
+githubcopilot.com
+
+# Telemetry
+collector.github.com
+copilot-telemetry.githubusercontent.com
