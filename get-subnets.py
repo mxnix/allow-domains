@@ -177,7 +177,10 @@ def write_subnets_to_file(subnets, filename):
 def copy_file_legacy(src_filename):
     base_filename = os.path.basename(src_filename)
     new_filename = base_filename.capitalize()
-    shutil.copy(src_filename, os.path.join(os.path.dirname(src_filename), new_filename))
+    dst_path = os.path.join(os.path.dirname(src_filename), new_filename)
+    if os.path.normcase(os.path.abspath(src_filename)) == os.path.normcase(os.path.abspath(dst_path)):
+        return
+    shutil.copy(src_filename, dst_path)
 
 if __name__ == '__main__':
     # Services from ASN (meta, twitter, hetzner, ovh, digitalocean)
