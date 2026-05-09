@@ -15,6 +15,7 @@ DOMAIN-SUFFIX,a-vrv.akamaized.net
 DOMAIN-SUFFIX,abercrombie.com
 DOMAIN-SUFFIX,abook-club.ru
 DOMAIN-SUFFIX,academy.terrasoft.ua
+DOMAIN-SUFFIX,accountkit.com
 DOMAIN-SUFFIX,activatica.org
 DOMAIN-SUFFIX,adguard.com
 DOMAIN-SUFFIX,adidas.com
@@ -67,6 +68,8 @@ DOMAIN-SUFFIX,api.jetbrains.ai
 DOMAIN-SUFFIX,api.service-kp.com
 DOMAIN-SUFFIX,api.theins.info
 DOMAIN-SUFFIX,api.themoviedb.org
+DOMAIN-SUFFIX,api.whatsapp.com
+DOMAIN-SUFFIX,api.whatsapp.net
 DOMAIN-SUFFIX,apkmirror.com
 DOMAIN-SUFFIX,app.zerossl.com
 DOMAIN-SUFFIX,arbat.media
@@ -129,6 +132,7 @@ DOMAIN-SUFFIX,bufferbloat.net
 DOMAIN-SUFFIX,builds.parsec.app
 DOMAIN-SUFFIX,buymeacoffee.com
 DOMAIN-SUFFIX,byteoversea.com
+DOMAIN-SUFFIX,c.whatsapp.net
 DOMAIN-SUFFIX,canva.com
 DOMAIN-SUFFIX,canva.dev
 DOMAIN-SUFFIX,capacitorjs.com
@@ -137,7 +141,9 @@ DOMAIN-SUFFIX,carrefouruae.com
 DOMAIN-SUFFIX,cats.com
 DOMAIN-SUFFIX,cbilling.eu
 DOMAIN-SUFFIX,cbilling.vip
+DOMAIN-SUFFIX,cdn.instagram.com
 DOMAIN-SUFFIX,cdn.web-platform.io
+DOMAIN-SUFFIX,cdn.whatsapp.net
 DOMAIN-SUFFIX,cdnbunny.org
 DOMAIN-SUFFIX,cdninstagram.com
 DOMAIN-SUFFIX,cdromance.org
@@ -147,6 +153,7 @@ DOMAIN-SUFFIX,censortracker.org
 DOMAIN-SUFFIX,chainreactioncycles.com
 DOMAIN-SUFFIX,chaos.com
 DOMAIN-SUFFIX,charhub.io
+DOMAIN-SUFFIX,chat.cdn.whatsapp.net
 DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chat.openai.com.cdn.cloudflare.net
 DOMAIN-SUFFIX,chatgpt.com
@@ -183,6 +190,7 @@ DOMAIN-SUFFIX,coldfilm.xyz
 DOMAIN-SUFFIX,collector.github.com
 DOMAIN-SUFFIX,colta.ru
 DOMAIN-SUFFIX,community.sophos.com
+DOMAIN-SUFFIX,connect.facebook.net
 DOMAIN-SUFFIX,connect.ngrok-agent.com
 DOMAIN-SUFFIX,contabo.com
 DOMAIN-SUFFIX,coomer.st
@@ -253,6 +261,7 @@ DOMAIN-SUFFIX,discordsays.com
 DOMAIN-SUFFIX,discours.io
 DOMAIN-SUFFIX,disctech.com
 DOMAIN-SUFFIX,disneyplus.com
+DOMAIN-SUFFIX,dit.whatsapp.net
 DOMAIN-SUFFIX,docs.liquibase.com
 DOMAIN-SUFFIX,document360.com
 DOMAIN-SUFFIX,document360.io
@@ -271,9 +280,12 @@ DOMAIN-SUFFIX,dumka.media
 DOMAIN-SUFFIX,dw.com
 DOMAIN-SUFFIX,dyson.com
 DOMAIN-SUFFIX,e-hentai.org
+DOMAIN-SUFFIX,e.whatsapp.net
 DOMAIN-SUFFIX,e621.net
 DOMAIN-SUFFIX,easydmarc.com
 DOMAIN-SUFFIX,echofm.online
+DOMAIN-SUFFIX,edge-chat.facebook.com
+DOMAIN-SUFFIX,edge-mqtt.facebook.com
 DOMAIN-SUFFIX,editorx.com
 DOMAIN-SUFFIX,edu-cisco.org
 DOMAIN-SUFFIX,ef.com
@@ -298,6 +310,7 @@ DOMAIN-SUFFIX,exchanger.bits.media
 DOMAIN-SUFFIX,exler.es
 DOMAIN-SUFFIX,expandrive.com
 DOMAIN-SUFFIX,expres.online
+DOMAIN-SUFFIX,external.xx.fbcdn.net
 DOMAIN-SUFFIX,extremetech.com
 DOMAIN-SUFFIX,f1.com
 DOMAIN-SUFFIX,f95-zone.to
@@ -312,6 +325,8 @@ DOMAIN-SUFFIX,fastly.net
 DOMAIN-SUFFIX,fastlystatus.com
 DOMAIN-SUFFIX,fastpic.org
 DOMAIN-SUFFIX,fb.com
+DOMAIN-SUFFIX,fb.me
+DOMAIN-SUFFIX,fbcdn.com
 DOMAIN-SUFFIX,fbcdn.net
 DOMAIN-SUFFIX,fbsbx.com
 DOMAIN-SUFFIX,ficbook.net
@@ -352,6 +367,7 @@ DOMAIN-SUFFIX,freeimages.com
 DOMAIN-SUFFIX,freemedia.io
 DOMAIN-SUFFIX,freeones.com
 DOMAIN-SUFFIX,fxnetworks.com
+DOMAIN-SUFFIX,g.whatsapp.net
 DOMAIN-SUFFIX,g2a.com
 DOMAIN-SUFFIX,gagadget.com
 DOMAIN-SUFFIX,gamedistribution.com
@@ -405,6 +421,9 @@ DOMAIN-SUFFIX,gql.twitch.tv
 DOMAIN-SUFFIX,gr-assets.com
 DOMAIN-SUFFIX,grafana.com
 DOMAIN-SUFFIX,grani.ru
+DOMAIN-SUFFIX,graph.facebook.com
+DOMAIN-SUFFIX,graph.whatsapp.com
+DOMAIN-SUFFIX,graph.whatsapp.net
 DOMAIN-SUFFIX,graty.me
 DOMAIN-SUFFIX,graylog.org
 DOMAIN-SUFFIX,grizzlysms.com
@@ -562,6 +581,7 @@ DOMAIN-SUFFIX,livetv.sx
 DOMAIN-SUFFIX,liveuamap.com
 DOMAIN-SUFFIX,locals.md
 DOMAIN-SUFFIX,lolz.guru
+DOMAIN-SUFFIX,lookaside.facebook.com
 DOMAIN-SUFFIX,lookerstudio.google.com
 DOMAIN-SUFFIX,lostfilm.download
 DOMAIN-SUFFIX,lostfilm.tv
@@ -571,6 +591,7 @@ DOMAIN-SUFFIX,lostfilmtv2.site
 DOMAIN-SUFFIX,lu4.org
 DOMAIN-SUFFIX,lucid.app
 DOMAIN-SUFFIX,lyst.com
+DOMAIN-SUFFIX,m.facebook.com
 DOMAIN-SUFFIX,magaz.global
 DOMAIN-SUFFIX,mail-api.proton.me
 DOMAIN-SUFFIX,mailerlite.com
@@ -590,6 +611,7 @@ DOMAIN-SUFFIX,mashable.com
 DOMAIN-SUFFIX,mattermost.com
 DOMAIN-SUFFIX,max.com
 DOMAIN-SUFFIX,mbk-news.appspot.com
+DOMAIN-SUFFIX,media.whatsapp.net
 DOMAIN-SUFFIX,mediazona.ca
 DOMAIN-SUFFIX,medicalnewstoday.com
 DOMAIN-SUFFIX,medium.com
@@ -599,6 +621,7 @@ DOMAIN-SUFFIX,mega.nz
 DOMAIN-SUFFIX,megapeer.ru
 DOMAIN-SUFFIX,megapeer.vip
 DOMAIN-SUFFIX,merezha.co
+DOMAIN-SUFFIX,messenger.com
 DOMAIN-SUFFIX,meta.com
 DOMAIN-SUFFIX,metacritic.com
 DOMAIN-SUFFIX,metal-archives.com
@@ -610,6 +633,8 @@ DOMAIN-SUFFIX,mignews.com
 DOMAIN-SUFFIX,mintmobile.com
 DOMAIN-SUFFIX,miracleptr.wordpress.com
 DOMAIN-SUFFIX,mixcloud.com
+DOMAIN-SUFFIX,mmg.whatsapp.net
+DOMAIN-SUFFIX,mmx-ds.cdn.whatsapp.net
 DOMAIN-SUFFIX,modrinth.com
 DOMAIN-SUFFIX,mongodb.com
 DOMAIN-SUFFIX,monolisa.dev
@@ -618,6 +643,7 @@ DOMAIN-SUFFIX,more.fm
 DOMAIN-SUFFIX,moscowtimes.ru
 DOMAIN-SUFFIX,mouser.com
 DOMAIN-SUFFIX,mouser.fi
+DOMAIN-SUFFIX,mqtt.facebook.com
 DOMAIN-SUFFIX,mssg.me
 DOMAIN-SUFFIX,mullvad.net
 DOMAIN-SUFFIX,multisim.com
@@ -771,6 +797,7 @@ DOMAIN-SUFFIX,portal.lviv.ua
 DOMAIN-SUFFIX,posle.media
 DOMAIN-SUFFIX,posthog.com
 DOMAIN-SUFFIX,postimees.ee
+DOMAIN-SUFFIX,pps.whatsapp.net
 DOMAIN-SUFFIX,pravda.com
 DOMAIN-SUFFIX,pravda.com.ua
 DOMAIN-SUFFIX,premierleague.com
@@ -878,6 +905,7 @@ DOMAIN-SUFFIX,saverudata.net
 DOMAIN-SUFFIX,schneider-electric.com
 DOMAIN-SUFFIX,sci-hub.se
 DOMAIN-SUFFIX,sci-hub.st
+DOMAIN-SUFFIX,scontent.xx.fbcdn.net
 DOMAIN-SUFFIX,scrollrevealjs.org
 DOMAIN-SUFFIX,scryde.io
 DOMAIN-SUFFIX,scryde.net
@@ -966,6 +994,7 @@ DOMAIN-SUFFIX,squietpc.com
 DOMAIN-SUFFIX,startmail.com
 DOMAIN-SUFFIX,startpage.com
 DOMAIN-SUFFIX,static.lostfilm.top
+DOMAIN-SUFFIX,static.whatsapp.net
 DOMAIN-SUFFIX,statology.org
 DOMAIN-SUFFIX,steamstat.info
 DOMAIN-SUFFIX,strana.news
@@ -1097,6 +1126,7 @@ DOMAIN-SUFFIX,usa.one
 DOMAIN-SUFFIX,usatoday.com
 DOMAIN-SUFFIX,usher.ttvnw.net
 DOMAIN-SUFFIX,v.vrv.co
+DOMAIN-SUFFIX,v.whatsapp.net
 DOMAIN-SUFFIX,vagrantcloud.com
 DOMAIN-SUFFIX,veeam.com
 DOMAIN-SUFFIX,verificationacademy.com
@@ -1129,15 +1159,24 @@ DOMAIN-SUFFIX,watermarkremover.io
 DOMAIN-SUFFIX,wbagora.com
 DOMAIN-SUFFIX,wbgames.com
 DOMAIN-SUFFIX,weather.com
+DOMAIN-SUFFIX,web.whatsapp.com
 DOMAIN-SUFFIX,webmd.com
 DOMAIN-SUFFIX,webnames.ca
 DOMAIN-SUFFIX,webtoons.com
 DOMAIN-SUFFIX,weebly.com
 DOMAIN-SUFFIX,welt.de
 DOMAIN-SUFFIX,wetransfer.com
+DOMAIN-SUFFIX,whatsapp-plus.info
+DOMAIN-SUFFIX,whatsapp-plus.me
+DOMAIN-SUFFIX,whatsapp-plus.net
 DOMAIN-SUFFIX,whatsapp.biz
+DOMAIN-SUFFIX,whatsapp.cc
 DOMAIN-SUFFIX,whatsapp.com
+DOMAIN-SUFFIX,whatsapp.info
 DOMAIN-SUFFIX,whatsapp.net
+DOMAIN-SUFFIX,whatsapp.org
+DOMAIN-SUFFIX,whatsapp.tv
+DOMAIN-SUFFIX,whatsappbrand.com
 DOMAIN-SUFFIX,wide-youtube.l.google.com
 DOMAIN-SUFFIX,widgetapp.stream
 DOMAIN-SUFFIX,wiki.fextralife.com
@@ -1187,6 +1226,7 @@ DOMAIN-SUFFIX,ytimg.com
 DOMAIN-SUFFIX,ytimg.l.google.com
 DOMAIN-SUFFIX,yting.com
 DOMAIN-SUFFIX,yummyani.me
+DOMAIN-SUFFIX,z-m-gateway.facebook.com
 DOMAIN-SUFFIX,zahav.ru
 DOMAIN-SUFFIX,zapier.com
 DOMAIN-SUFFIX,zaxid.net
