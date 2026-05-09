@@ -71,6 +71,7 @@ DOMAIN-SUFFIX,api.themoviedb.org
 DOMAIN-SUFFIX,api.whatsapp.com
 DOMAIN-SUFFIX,api.whatsapp.net
 DOMAIN-SUFFIX,apkmirror.com
+DOMAIN-SUFFIX,app.kiro.dev
 DOMAIN-SUFFIX,app.zerossl.com
 DOMAIN-SUFFIX,arbat.media
 DOMAIN-SUFFIX,arc.net
@@ -78,6 +79,7 @@ DOMAIN-SUFFIX,archive.ph
 DOMAIN-SUFFIX,archiveofourown.org
 DOMAIN-SUFFIX,arduino.cc
 DOMAIN-SUFFIX,as6723.net
+DOMAIN-SUFFIX,assets.app.kiro.dev
 DOMAIN-SUFFIX,assets.heroku.com
 DOMAIN-SUFFIX,atlassian.com
 DOMAIN-SUFFIX,atn.ua
@@ -172,6 +174,7 @@ DOMAIN-SUFFIX,clashroyaleapp.com
 DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,clevelandclinic.org
+DOMAIN-SUFFIX,cli.kiro.dev
 DOMAIN-SUFFIX,clickup.com
 DOMAIN-SUFFIX,clip.opus.pro
 DOMAIN-SUFFIX,cloudtorrents.com
@@ -181,6 +184,7 @@ DOMAIN-SUFFIX,cock.li
 DOMAIN-SUFFIX,code.gist.build
 DOMAIN-SUFFIX,codeium.com
 DOMAIN-SUFFIX,codelinaro.org
+DOMAIN-SUFFIX,cognito-identity.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,coingate.com
 DOMAIN-SUFFIX,coinpayments.net
 DOMAIN-SUFFIX,coinsbee.com
@@ -544,6 +548,7 @@ DOMAIN-SUFFIX,kinozal.guru
 DOMAIN-SUFFIX,kinozal.me
 DOMAIN-SUFFIX,kinozal.tv
 DOMAIN-SUFFIX,kinozaltv.life
+DOMAIN-SUFFIX,kiro.dev
 DOMAIN-SUFFIX,klarna.com
 DOMAIN-SUFFIX,kmail-lists.com
 DOMAIN-SUFFIX,knews.kg
@@ -600,6 +605,8 @@ DOMAIN-SUFFIX,mailinator.com
 DOMAIN-SUFFIX,mailo.com
 DOMAIN-SUFFIX,make.com
 DOMAIN-SUFFIX,malwarebytes.com
+DOMAIN-SUFFIX,management.eu-central-1.kiro.dev
+DOMAIN-SUFFIX,management.us-east-1.kiro.dev
 DOMAIN-SUFFIX,mangadex.org
 DOMAIN-SUFFIX,mangahub.ru
 DOMAIN-SUFFIX,mangapark.net
@@ -736,6 +743,7 @@ DOMAIN-SUFFIX,omv-extras.org
 DOMAIN-SUFFIX,onfastspring.com
 DOMAIN-SUFFIX,onlinesim.io
 DOMAIN-SUFFIX,onshape.com
+DOMAIN-SUFFIX,open-vsx.org
 DOMAIN-SUFFIX,openai.com
 DOMAIN-SUFFIX,openh264.org
 DOMAIN-SUFFIX,openmedia.io
@@ -744,6 +752,7 @@ DOMAIN-SUFFIX,opensanctions.org
 DOMAIN-SUFFIX,opensea.io
 DOMAIN-SUFFIX,opensource.guide
 DOMAIN-SUFFIX,opentrackr.org
+DOMAIN-SUFFIX,openvsx.eclipsecontent.org
 DOMAIN-SUFFIX,opposition-news.com
 DOMAIN-SUFFIX,oracle.com
 DOMAIN-SUFFIX,oraclecloud.com
@@ -807,6 +816,9 @@ DOMAIN-SUFFIX,primevue.org
 DOMAIN-SUFFIX,privatekeys.pw
 DOMAIN-SUFFIX,prnt.sc
 DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
+DOMAIN-SUFFIX,prod.download.desktop.kiro.dev
+DOMAIN-SUFFIX,prod.us-east-1.auth.desktop.kiro.dev
+DOMAIN-SUFFIX,prod.us-east-1.telemetry.desktop.kiro.dev
 DOMAIN-SUFFIX,production-openaicom-storage.azureedge.net
 DOMAIN-SUFFIX,proekt.media
 DOMAIN-SUFFIX,profitwell.com
@@ -821,6 +833,8 @@ DOMAIN-SUFFIX,pscp.tv
 DOMAIN-SUFFIX,psiphon.ca
 DOMAIN-SUFFIX,public.parsec.app
 DOMAIN-SUFFIX,pvpessence.com
+DOMAIN-SUFFIX,q.eu-central-1.amazonaws.com
+DOMAIN-SUFFIX,q.us-east-1.amazonaws.com
 DOMAIN-SUFFIX,qodana.cloud
 DOMAIN-SUFFIX,qoder.com
 DOMAIN-SUFFIX,qt.io
@@ -876,6 +890,8 @@ DOMAIN-SUFFIX,rublacklist.net
 DOMAIN-SUFFIX,rule34.art
 DOMAIN-SUFFIX,rule34.us
 DOMAIN-SUFFIX,rule34.xxx
+DOMAIN-SUFFIX,runtime.eu-central-1.kiro.dev
+DOMAIN-SUFFIX,runtime.us-east-1.kiro.dev
 DOMAIN-SUFFIX,rus.delfi.ee
 DOMAIN-SUFFIX,rus.jauns.lv
 DOMAIN-SUFFIX,ruscryde.net
@@ -1029,6 +1045,8 @@ DOMAIN-SUFFIX,telegraf.by
 DOMAIN-SUFFIX,telegraf.news
 DOMAIN-SUFFIX,telegraph.co.uk
 DOMAIN-SUFFIX,telemetr.io
+DOMAIN-SUFFIX,telemetry.eu-central-1.kiro.dev
+DOMAIN-SUFFIX,telemetry.us-east-1.kiro.dev
 DOMAIN-SUFFIX,tellapart.com
 DOMAIN-SUFFIX,tempmail.plus
 DOMAIN-SUFFIX,temu.com

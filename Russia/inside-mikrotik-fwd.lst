@@ -71,6 +71,7 @@
 /ip dns static add name=api.whatsapp.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=api.whatsapp.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=apkmirror.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=app.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=app.zerossl.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=arbat.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=arc.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -78,6 +79,7 @@
 /ip dns static add name=archiveofourown.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=arduino.cc type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=as6723.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=assets.app.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=assets.heroku.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=atlassian.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=atn.ua type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -172,6 +174,7 @@
 /ip dns static add name=claude.ai type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=claude.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=clevelandclinic.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=cli.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=clickup.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=clip.opus.pro type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=cloudtorrents.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -181,6 +184,7 @@
 /ip dns static add name=code.gist.build type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=codeium.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=codelinaro.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=cognito-identity.us-east-1.amazonaws.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coingate.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coinpayments.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=coinsbee.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -544,6 +548,7 @@
 /ip dns static add name=kinozal.me type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kinozal.tv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kinozaltv.life type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=klarna.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=kmail-lists.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=knews.kg type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -600,6 +605,8 @@
 /ip dns static add name=mailo.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=make.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=malwarebytes.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=management.eu-central-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=management.us-east-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mangadex.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mangahub.ru type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=mangapark.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -736,6 +743,7 @@
 /ip dns static add name=onfastspring.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=onlinesim.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=onshape.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=open-vsx.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=openai.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=openh264.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=openmedia.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -744,6 +752,7 @@
 /ip dns static add name=opensea.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opensource.guide type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opentrackr.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=openvsx.eclipsecontent.org type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=opposition-news.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=oracle.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=oraclecloud.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -807,6 +816,9 @@
 /ip dns static add name=privatekeys.pw type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=prnt.sc type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=proactivebackend-pa.googleapis.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=prod.download.desktop.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=prod.us-east-1.auth.desktop.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=prod.us-east-1.telemetry.desktop.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=production-openaicom-storage.azureedge.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=proekt.media type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=profitwell.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -821,6 +833,8 @@
 /ip dns static add name=psiphon.ca type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=public.parsec.app type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=pvpessence.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=q.eu-central-1.amazonaws.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=q.us-east-1.amazonaws.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=qodana.cloud type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=qoder.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=qt.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -876,6 +890,8 @@
 /ip dns static add name=rule34.art type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rule34.us type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rule34.xxx type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=runtime.eu-central-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=runtime.us-east-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.delfi.ee type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=rus.jauns.lv type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=ruscryde.net type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
@@ -1028,6 +1044,8 @@
 /ip dns static add name=telegraf.news type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=telegraph.co.uk type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=telemetr.io type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=telemetry.eu-central-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
+/ip dns static add name=telemetry.us-east-1.kiro.dev type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tellapart.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=tempmail.plus type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
 /ip dns static add name=temu.com type=FWD address-list=allow-domains match-subdomain=yes forward-to=localhost
