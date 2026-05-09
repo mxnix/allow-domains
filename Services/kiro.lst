@@ -1,0 +1,36 @@
+# Kiro IDE (AWS)
+# Source: https://kiro.dev/docs/autonomous-agent/firewalls/
+
+# Core
+kiro.dev
+app.kiro.dev
+assets.app.kiro.dev
+
+# Auth
+prod.us-east-1.auth.desktop.kiro.dev
+
+# Telemetry
+prod.us-east-1.telemetry.desktop.kiro.dev
+telemetry.us-east-1.kiro.dev
+telemetry.eu-central-1.kiro.dev
+
+# Downloads, Powers registry
+prod.download.desktop.kiro.dev
+cli.kiro.dev
+
+# Runtime (AI service)
+runtime.us-east-1.kiro.dev
+runtime.eu-central-1.kiro.dev
+q.us-east-1.amazonaws.com
+q.eu-central-1.amazonaws.com
+
+# Management
+management.us-east-1.kiro.dev
+management.eu-central-1.kiro.dev
+
+# Social sign-in (Cognito)
+cognito-identity.us-east-1.amazonaws.com
+
+# Extensions
+open-vsx.org
+openvsx.eclipsecontent.org
