@@ -2,7 +2,9 @@
 
 import tldextract
 import urllib.request
+import urllib.error
 import re
+import time
 from pathlib import Path
 import json
 import os
@@ -25,6 +27,20 @@ SUBNET_SERVICES = [
 ]
 ExcludeServices = {"telegram.lst", "cloudflare.lst", "google_ai.lst", "google_play.lst", 'hetzner.lst', 'ovh.lst', 'digitalocean.lst', 'cloudfront.lst', 'hodca.lst', 'roblox.lst', 'google_meet.lst'}
 COMMENT_RE = re.compile(r'\s+(#|;|//).*')
+
+def download_file(url, filename, retries=3, delay=10):
+    """Download a file with retry logic. Returns True on success, False on failure."""
+    for attempt in range(1, retries + 1):
+        try:
+            urllib.request.urlretrieve(url, filename)
+            return True
+        except (urllib.error.URLError, OSError) as e:
+            print(f"Attempt {attempt}/{retries} failed for {url}: {e}", file=sys.stderr)
+            if attempt < retries:
+                print(f"Retrying in {delay}s...", file=sys.stderr)
+                time.sleep(delay)
+    print(f"WARNING: Could not download {url} after {retries} attempts, skipping.", file=sys.stderr)
+    return False
 
 def clean_list_line(line):
     stripped = line.strip()
@@ -309,19 +325,29 @@ if __name__ == '__main__':
     # Ukraine
     Path("Ukraine").mkdir(parents=True, exist_ok=True)
 
-    urllib.request.urlretrieve("https://uablacklist.net/domains.txt", "uablacklist-domains.lst")
-    urllib.request.urlretrieve("https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/domainsdb.txt", "zaboronahelp-domains.lst")
+    ua_downloads = [
+        ("https://uablacklist.net/domains.txt", "uablacklist-domains.lst"),
+        ("https://raw.githubusercontent.com/zhovner/zaborona_help/master/config/domainsdb.txt", "zaboronahelp-domains.lst"),
+    ]
 
-    ua_lists = ['uablacklist-domains.lst', 'zaboronahelp-domains.lst', uaDomainsSrc]
-    
-    raw(ua_lists, uaDomainsOut)
-    dnsmasq(ua_lists, uaDomainsOut)
-    clashx(ua_lists, uaDomainsOut)
-    kvas(ua_lists, uaDomainsOut)
-    mikrotik_fwd(ua_lists, uaDomainsOut)
+    ua_temp_files = []
+    for url, filename in ua_downloads:
+        if download_file(url, filename):
+            ua_temp_files.append(filename)
 
-    for temp_file in ['uablacklist-domains.lst', 'zaboronahelp-domains.lst']:
-        Path(temp_file).unlink()
+    ua_lists = ua_temp_files + [uaDomainsSrc]
+
+    if ua_temp_files or os.path.exists(uaDomainsSrc):
+        raw(ua_lists, uaDomainsOut)
+        dnsmasq(ua_lists, uaDomainsOut)
+        clashx(ua_lists, uaDomainsOut)
+        kvas(ua_lists, uaDomainsOut)
+        mikrotik_fwd(ua_lists, uaDomainsOut)
+    else:
+        print("WARNING: No Ukraine domain sources available, skipping Ukraine lists.", file=sys.stderr)
+
+    for temp_file in ua_temp_files:
+        Path(temp_file).unlink(missing_ok=True)
 
     # Sing-box ruleset main
     russia_inside = lines_from_file('Russia/inside-raw.lst')
