@@ -335,16 +335,15 @@ if __name__ == '__main__':
         if download_file(url, filename):
             ua_temp_files.append(filename)
 
-    ua_lists = ua_temp_files + [uaDomainsSrc]
-
-    if ua_temp_files or os.path.exists(uaDomainsSrc):
+    if ua_temp_files:
+        ua_lists = ua_temp_files + [uaDomainsSrc]
         raw(ua_lists, uaDomainsOut)
         dnsmasq(ua_lists, uaDomainsOut)
         clashx(ua_lists, uaDomainsOut)
         kvas(ua_lists, uaDomainsOut)
         mikrotik_fwd(ua_lists, uaDomainsOut)
     else:
-        print("WARNING: No Ukraine domain sources available, skipping Ukraine lists.", file=sys.stderr)
+        print("WARNING: Could not download any Ukraine external sources. Keeping existing lists unchanged.", file=sys.stderr)
 
     for temp_file in ua_temp_files:
         Path(temp_file).unlink(missing_ok=True)
